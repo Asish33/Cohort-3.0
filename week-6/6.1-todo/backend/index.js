@@ -9,16 +9,16 @@ app.use(express.json());
 
 
 // Get all todos
-app.get('/todos', getAllTodo);
+app.get('/todos',getAllTodo);
 
 // Add a new todo
-app.post('/todos', createTodo);
+app.post('/todos',createTodo);
 
 // Update a todo
-app.put('/todos/:id', updateTodo);
+app.put('/todos/:id',updateTodo);
 
 // Delete a todo
-app.delete('/todos/:id', deleteTodoById);
+app.delete('/todos/:id',deleteTodoById);
 
 
 // TODO: can you implement search todo route ???

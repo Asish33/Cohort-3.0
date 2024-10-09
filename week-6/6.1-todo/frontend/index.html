@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100xTODO</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>100xTODO</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
 
-    <div class="input-container">
-      <input type="text" id="todo-input" placeholder="Enter a todo..." />
-      <button id="add-todo-btn">Add Todo</button>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    
+    <style>
+
+        .container{
+            width: 1320px;
+            height: 1320px;
+            background-color: green;
+        }
+        
+        #input-boxes{
+            margin-top: 20px;
+        }
+        #toadded {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .todo {
+            display: flex;
+            align-items: center;
+            background-color: peachpuff;
+            width: 250px;
+            height: 50px;
+            border-radius: 15px;
+            border: solid black 1px;
+            box-shadow: 1px 1px 1px 1px;
+            margin-top: 20px;
+        }
+
+        .box {
+            margin-top: center;
+            border-radius: 5px;
+            transform: scale(1.0);
+        }
+
+        .todo-text {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            color: red;
+            margin-left: 10px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+   <center>
+    <div class="container">
+        <div id="input-boxes" style="display: flex;justify-content: center;">
+        <input id="words" type="text" placeholder="Enter Todo">
+        <button style="margin-left: 30px;" onclick="fun()">Add Todo</button>
     </div>
 
-    <ul id="todo-list"></ul>
-  </div>
+    <div id="toadded">
+    </div>
+    </div>
+</center>
 
   <script src="script.js"></script>
 </body>
