@@ -11,10 +11,14 @@
     
     <style>
 
+        body{
+            background-image: linear-gradient(to right, #000000, #000080);
+        }
+
         .container{
             width: 1320px;
             height: 1320px;
-            background-color: green;
+            
         }
         
         #input-boxes{
@@ -64,7 +68,7 @@
     <div class="container">
         <div id="input-boxes" style="display: flex;justify-content: center;">
         <input id="words" type="text" placeholder="Enter Todo">
-        <button style="margin-left: 30px;" onclick="fun()">Add Todo</button>
+        <button id="add-todo-btn" style="margin-left: 30px;" onclick="addTodoToDOM()">Add Todo</button>
     </div>
 
     <div id="toadded">

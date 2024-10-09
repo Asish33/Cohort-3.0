@@ -1,4 +1,4 @@
-let todos = []; // in memory space
+let todos = []; 
 
 function index() {
     todos.map((todo, idx) => {
@@ -67,3 +67,5 @@ module.exports = {
     updateTodo,
     deleteTodoById,
 };
+
+console.log(todos);
