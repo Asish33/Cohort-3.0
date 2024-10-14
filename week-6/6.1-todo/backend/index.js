@@ -20,9 +20,6 @@ app.put('/todos/:id',updateTodo);
 // Delete a todo
 app.delete('/todos/:id',deleteTodoById);
 
-
-// TODO: can you implement search todo route ???
-
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
